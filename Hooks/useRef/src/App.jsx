@@ -22,7 +22,7 @@ function App() {
       <h2>
         <span>Enter Your Name:</span> {name}
       </h2>
-      <h2>Renders: {count.c}</h2>
+      <h2>Renders: {count.current}</h2>
     </>
   );
 }
