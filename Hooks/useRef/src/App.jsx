@@ -11,6 +11,11 @@ function App() {
     count.current = count.current + 1;
   });
 
+  const a2 = useRef(0);
+  const countthatshit = () => {
+    a2.current = a2.current + 4;
+  };
+
   //This will cause infinite loop of re-renders
   // useEffect(() => {
   //   setCount((prev) => prev + 1);
@@ -23,6 +28,7 @@ function App() {
         <span>Enter Your Name:</span> {name}
       </h2>
       <h2>Renders: {count.current}</h2>
+      <h2>Countit: {countthatshit}</h2>
     </>
   );
 }
